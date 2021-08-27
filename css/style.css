@@ -1,0 +1,364 @@
+header {
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	top: 45px;
+	z-index: 2;
+}
+
+#logo {
+	line-height: 60px;
+	margin-left: 40px;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 45px;
+	font-family: 'Satisfy', cursive;
+	font-weight: bold;
+	color: rgb(2, 1, 5);
+}
+
+#logo:hover {
+	color: #eef9ff;
+}
+
+#logo-s {
+	color: #eef9ff;
+	/* white */
+	margin-left: 5px;
+}
+
+#logo:hover #logo-s {
+	color: rgb(2, 1, 5);
+}
+
+.sign {
+	float: left;
+	line-height: 60px;
+	margin-right: 40px;
+}
+
+.sign a {
+	font-family: 'Satisfy', cursive;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.act {
+	border: 2px solid #fff;
+	border-radius: 50px;
+	padding: 6px 15px;
+}
+
+#sign1 a:hover {
+	color: rgb(197, 91, 4);
+	border-color: rgb(197, 91, 4);
+}
+
+#sign2 a:hover {
+	color: rgb(2, 94, 231);
+	border-color: rgb(2, 94, 231);
+}
+
+#sign3 a:hover {
+	color: rgb(2, 1, 5);
+	border-color: rgb(2, 1, 5);
+}
+
+#sign4 a:hover {
+	color: rgb(231, 2, 2);
+	border-color: rgb(231, 2, 2);
+}
+
+#sign5 a:hover {
+	color: rgb(2, 231, 71);
+	border-color: rgb(2, 231, 71);
+}
+
+/* /1 */
+
+/* 2 */
+.slider {
+	position: relative;
+	width: 100%;
+	background: #2c3e50;
+	/* darckblue */
+}
+
+.myslide {
+	height: 100vh;
+	display: none;
+	overflow: hidden;
+}
+
+.prev,
+.next {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+	color: rgb(2, 1, 5);
+}
+
+.next {
+	right: 0;
+}
+
+.dotsbox {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+	width: 100vw;
+}
+
+.dot {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+/* /2 */
+
+/* javascript */
+.active,
+.dot:hover {
+	border-color: rgb(2, 1, 5);
+	;
+	/* black*/
+}
+
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.8
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.8
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+/* /muslide add fade */
+
+/* 3 */
+.txt {
+	text-align: justify;
+	font-family: 'Nunito', cursive;
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 30%;
+	left: 15%;
+	right: 20%;
+	-webkit-animation-name: posi;
+	-webkit-animation-duration: 2s;
+	animation-name: posi;
+	animation-duration: 2s;
+	z-index: 1;
+}
+
+.txt .txt1 {
+	color: rgb(197, 91, 4);
+}
+
+.txt .txt2 {
+	color: rgb(2, 94, 231);
+}
+
+.txt .txt3 {
+	color: rgb(2, 1, 5);
+}
+
+.txt .txt4 {
+	color: rgb(231, 2, 2);
+}
+
+.txt .txt5 {
+	color: rgb(2, 231, 71);
+}
+
+@-webkit-keyframes posi {
+	from {
+		left: 25%;
+	}
+
+	to {
+		left: 15%;
+	}
+}
+
+
+@keyframes posi {
+	from {
+		left: 25%;
+	}
+
+	to {
+		left: 15%;
+	}
+}
+
+.txt h1 {
+	text-align: left;
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Satisfy', cursive;
+	margin-bottom: 20px;
+}
+
+.txt p {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* /3 */
+
+/* 4 */
+img {
+	opacity: 15%;
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+	-webkit-animation-duration: 40s;
+	animation-name: zoomin;
+	animation-duration: 40s;
+}
+
+@-webkit-keyframes zoomin {
+	from {
+		transform: scale(1, 1);
+	}
+
+	to {
+		transform: scale(1.5, 1.5);
+	}
+}
+
+
+@keyframes zoomin {
+	from {
+		transform: scale(1, 1);
+	}
+
+	to {
+		transform: scale(1.5, 1.5);
+	}
+}
+
+/* /4 */
+
+
+
+/* 5 */
+@media screen and (max-width: 800px) {
+
+	.myslide {
+		height: 100vh;
+
+	}
+
+	.txt {
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		width: 75%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+		from {
+			top: 35%;
+		}
+
+		to {
+			top: 50%;
+		}
+	}
+
+
+	@keyframes posi2 {
+		from {
+			top: 35%;
+		}
+
+		to {
+			top: 50%;
+		}
+	}
+
+	.txt h1 {
+		font-size: 40px;
+	}
+
+	.txt p {
+		font-size: 13px;
+	}
+
+}
+
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 520px) {
+	#logo {
+		font-size: 30px;
+	}
+
+	header {
+		top: 15px;
+	}
+
+	.txt h1 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.sign {
+		margin-right: 20px;
+	}
+
+	.sign a {
+		font-size: 12px;
+	}
+}
+
+/* /6 */

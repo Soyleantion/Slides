@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="images/logo.png">
+	<title>Slides</title>
+
+	<!-- ICONOS -->
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+	<!-- HOJAS DE ESTILOS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/loader.css">
+
+	<!-- FUENTES -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- LOADER -->
+	<div class="lds-ring" id="loader">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+	<header>
+		<a href="https://draco.com.co/" target="_blank">
+			<div id="logo">DRACO<span id="logo-s">SERVICIOS</span></div>
+		</a>
+	</header>
+
+	<main class="slider">
+		<!-- fade css -->
+		<div class="myslide fade">
+			<div class="txt">
+				<h1 class="txt1"><b>APRENDE HTML5</b></h1>
+				<p>Si estás interesado en iniciar tu carrera en el mundo de la tecnología y el desarrollo, muy
+					seguramente te has hecho las siguientes preguntas: ¿Qué es HTML y por qué es importante aprenderlo?
+					aprende a estructurar tus páginas web con nuestro curso...<br><span class="sign" id="sign1"><a class="act"
+							href="#">REGÍSTRATE AQUÍ</a></span> </p>
+			</div>
+			<img src="images/img1.png" style="width: 100%; height: 100%;">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+				<h1 class="txt2"><b>APRENDE CSS</b></h1>
+				<p>Aprende a dar forma y diseño a documentos estructurados en HTML5, con nuestro curso de
+					CSS3...<br><span class="sign" id="sign2"><a class="act" href="#">REGÍSTRATE AQUÍ</a></span></p>
+			</div>
+			<img src="images/img2.jpg" style="width: 100%; height: 100%;">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+				<h1 class="txt3"> APRENDE JAVASCRIPT</h1>
+				<p>JavaScript es sin duda uno de los lenguajes cuyo interés no ha disminuido con el pasar de los años y
+					es que a día de hoy prácticamente toda la web está construida sobre este lenguaje, no te quedes sin
+					aprenderlo...<br><span class="sign" id="sign3"><a class="act" href="#">REGÍSTRATE AQUÍ</a></span></p>
+			</div>
+			<img src="images/img3.png"
+				style="width: 100%; height: 100%;">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+				<h1 class="txt4">APRENDE AG</h1>
+				<p>Angular es un framework que separa completamente el frontend y el backend en la aplicación, evita
+					escribir código repetitivo y mantiene todo más ordenado gracias a su patrón MVC
+					(Modelo-Vista-Controlador) asegurando los desarrollos con rapidez,¿Qué esperas para
+					aprenderlo?..<br><span class="sign" id="sign4"><a class="act" href="#">REGÍSTRATE AQUÍ</a></span></p>
+			</div>
+			<img src="images/img4.png"
+				style="width: 100%; height: 100%;">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+				<h1 class="txt5">APRENDE VUE</h1>
+				<p>Vue es un framework alternativo y progresivo para construir interfaces de usuario. A diferencia de
+					otros frameworks monolíticos, Vue está diseñado desde cero para ser utilizado incrementalmente. La
+					librería central está enfocada solo en la capa de visualización, y es fácil de utilizar e integrar
+					con otras librerías o proyectos existentes ¡Aprendelo ahora!<br><span class="sign" id="sign5"><a class="act"
+							href="#">REGÍSTRATE AQUÍ</a></span></p>
+			</div>
+			<img src="images/img5.png"
+				style="width: 100%; height: 100%;">
+		</div>
+		<!-- /fade css -->
+
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+		<!-- /onclick js -->
+	</main>
+
+	<script src="js/slides.js"></script>
+	<script src="js/loader.js"></script>
+</body>
+
+</html>
